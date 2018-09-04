@@ -50,21 +50,24 @@ source ~/.bashrc
 
 # install Bazel to build TensorFlow from source
 # May need the user to accept terms and conditions
-# sudo add-apt-repository ppa:webupd8team/java
-# sudo apt-get -y update && sudo apt-get -y install oracle-java8-installer
-# echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-# curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
-# sudo apt-get -y update && sudo apt-get -y install bazel
-# sudo apt-get -y upgrade bazel
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get -y update && sudo apt-get -y install oracle-java8-installer
+echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+sudo apt-get -y update && sudo apt-get -y install bazel
+sudo apt-get -y upgrade bazel
 
 
-# Install Tensorflow on instance
-# git clone https://github.com/tensorflow/tensorflow
-# cd ~/tensorflow
-# ./configure
+# Build Tensorflow on instance
+# https://www.tensorflow.org/install/install_sources
 
+git clone https://github.com/tensorflow/tensorflow
+cd ~/tensorflow
+./configure
 
+# using nccl 1.3.5 allowed to build tensorflow 1.10
 # /usr/bin/python3.5
 
-
-
+# build tensoflow using bazel
+bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
+bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg

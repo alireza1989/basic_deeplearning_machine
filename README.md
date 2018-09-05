@@ -7,6 +7,12 @@
 * Nvidia compatible GPU 
 -----------
 
+#### Test Environmet:
+- Ubuntu 16.04 virtual-machine on Google Cloud Platform
+-  Nvidia Tesla K80 GPU
+-  Python 3.5
+
+----
 
 #### List of bash scripts:
 ```
@@ -34,13 +40,13 @@ chmod +x [script-name].sh
 ```console
 ./[script-name].sh
 ```
-**4. _"cuda_with_tensorflow_building_from_source.sh"_ asks the user for TensorFlow configuration before the compilation steps**
+**4. _"cuda_with_tensorflow_building_from_source.sh"_ asks the user for TensorFlow configuration before the compilation starts**
 
 **Automated Steps:**
 
-* Instal bazel to compile TensorFlow => in this step you will be asked to accept the terms and condition for JDK.
+* Install bazel to compile TensorFlow => in this step you will be asked to accept the terms and condition for JDK.
 
-> While installing Java to instal Bazel you will be promted to accpt terms and conditions.
+> While installing Java to instal Bazel you will be promted to accept terms and conditions.
 > 
 > ![java1](/images/java_binary_1.png)
 > 
@@ -80,7 +86,7 @@ chmod +x [script-name].sh
 >
 > ![tf4](/images/tf4.png)
 > 
->5. Then you will asked to choose NCCL version. Since, V-2.2 is not installed. Choose V-1.3.5 or lookup how to install V-2.2. Latest version contains performance improvement on multiple GPU jobs.
+>5. Then you will be asked to choose NCCL version. Since, V-2.2 is not installed. Choose V-1.3.5 or lookup how to install V-2.2. The latest version contains performance improvement on multiple GPU jobs.
 >
 >![tf5](/images/tf5.png)
 >
@@ -90,7 +96,7 @@ chmod +x [script-name].sh
 >
 >7. Then our bash script will install TensorFlow for Python3.
 >
->8. If our bash script ran successfully, we should see the version of the tensorflow installed on the screen.  
+>8. If our bash script ran successfully, we should see the version of the TensorFlow installed on the screen.  
 
 
 ### Follow me @ Republic of AI:

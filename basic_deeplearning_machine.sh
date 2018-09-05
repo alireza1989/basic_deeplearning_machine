@@ -46,3 +46,11 @@ sudo apt-get -y install python-pip python3-pip python-virtualenv swig python-whe
 echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64"' >> ~/.bashrc
 echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
 source ~/.bashrc
+
+# remove binaries from vm
+sudo rm cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo rm cudnn-9.1-linux-x64-v7.tgz
+
+# remove binaries from vm
+sudo rm cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo rm cudnn-9.1-linux-x64-v7.tgz

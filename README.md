@@ -3,8 +3,8 @@
 
 
 #### prerequisites:
-    * Ubuntu 16.04  installed (automated installation for newer version of Ubuntu will be comming soon)
-    * Nvidia compatible GPU 
+* Ubuntu 16.04  installed (automated installation for newer version of Ubuntu will be comming soon)
+* Nvidia compatible GPU 
 -----------
 #
 
@@ -35,4 +35,20 @@ chmod +x [script-name].sh
 ./[script-name].sh
 ```
 **4. _"cuda_with_tensorflow_building_from_source.sh"_ asks the user for TensorFlow configuration before the compilation steps**
+
+**Automated Steps:**
+
+* Instal bazel to compile TensorFlow => in this step you will be asked to accept the terms and condition for JDK.
+
+> While installing Java to instal Bazel you will be promted to accpt terms and conditions.
+> 
+> ![java1](/images/java_binary_1.png)
+> 
+> Hit enter to accept the License terms.
+> 
+> ![java2](/images/java_binary_2.png)
+> 
+> Select Yes and hit enter to accept Oracle binary code License terms.
+
+* Building TensorFlow from source. => in this step you will be asked to set different parameters in TensofFlow ("./configure") before starting the compilation.   
 

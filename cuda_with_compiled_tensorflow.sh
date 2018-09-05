@@ -48,7 +48,7 @@ echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
 source ~/.bashrc
 
 # Upgrade the pip install
-sudo pip -y install -U pip
+sudo pip3 install -U pip
 
 # Install TensorFlow - https://www.tensorflow.org/install/install_linux#InstallingNativePip
 # option 1: tensorflow —Current release for CPU 
@@ -58,4 +58,4 @@ sudo pip -y install -U pip
 sudo pip3 install -U tensorflow-gpu
 
 # Test the installation
-python -c "import tensorflow as tf; print(tf.__version__)"
+python3 -c "import tensorflow as tf; print(tf.__version__)"

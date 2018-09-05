@@ -6,7 +6,7 @@
 * Ubuntu 16.04  installed (automated installation for newer version of Ubuntu will be comming soon)
 * Nvidia compatible GPU 
 -----------
-#
+
 
 #### List of bash scripts:
 ```
@@ -50,5 +50,39 @@ chmod +x [script-name].sh
 > 
 > Select Yes and hit enter to accept Oracle binary code License terms.
 
+#
 * Building TensorFlow from source. => in this step you will be asked to set different parameters in TensofFlow ("./configure") before starting the compilation.   
 
+
+> Before TensorFlow compilation gets started, you will be prompted to set the configuration (add or remove of supporting of other frameworks).  This could effect the compilation time. 
+> 
+> 1. you will be asked to specify the location of Python on your machine.
+> 
+> ![tf1](/images/tf1.png)
+> ```
+> on most machines:   /usr/bin/python or /usr/bin/python3.5 or etc
+> ```
+> 2. then you will be asked to specifiy the path to python libraries.
+> 
+> ![ft2](/images/tf2.png)
+> ```
+> default is: /usr/local/lib/python3.5/dist-packages
+> ```
+> 3. After you specify that, you will be asked to choose for your TensorFlow to support or do not support many FrameWorks and Services.  
+> **For more information visit TensorFlow installation Page here: [TensorFlow](https://www.tensorflow.org/install/install_sources)**
+> 
+> EXAMPLE: (If you hit enter you will choose the default values.)
+> 
+>![tf3](/images/tf3.png)
+> 
+> 
+>4. Make sure you choose the right version of CUDA and cuDNN.
+>
+> ![tf4](/images/tf4.png)
+>5. Then you will asked to choose NCCL version. Since, V-2.2 is not installed. Choose V-1.3.5 or lookup how to install V-2.2. Latest version contains performance improvement on multiple GPU jobs.
+>
+>![tf5](/images/tf5.png)
+>6. After you finish *step-5* the compilation will start.  It could take around few minutes to a couple of hours depending on how fast is your CPU, RAM, and hard drive.
+>
+>![tf6](/images/tf6.png)
+>

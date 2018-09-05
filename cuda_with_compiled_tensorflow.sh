@@ -57,5 +57,12 @@ sudo pip3 install -U pip
 # option 4: tf-nightly-gpu —Nightly build with GPU support
 sudo pip3 install -U tensorflow-gpu
 
+# Install Keras
+sudo pip3 install keras
+
 # Test the installation
 python3 -c "import tensorflow as tf; print(tf.__version__)"
+
+# remove binaries from vm
+sudo rm cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
+sudo rm cudnn-9.1-linux-x64-v7.tgz

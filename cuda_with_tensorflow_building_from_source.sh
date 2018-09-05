@@ -65,15 +65,12 @@ git clone https://github.com/tensorflow/tensorflow
 cd ~/tensorflow
 ./configure
 
-# using nccl 1.3.5 allowed to build tensorflow 1.10
-# /usr/bin/python3.5
-
 # build tensoflow using bazel
 bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 
 # Install TensorFlow
-# sudo pip3 install /tmp/tensorflow_pkg/tensorflow
+sudo pip3 install /tmp/tensorflow_pkg/tensorflow
 
 # Test the installation
-# python3 -c "import tensorflow as tf; print(tf.__version__)"
+python3net -c "import tensorflow as tf; print(tf.__version__)"

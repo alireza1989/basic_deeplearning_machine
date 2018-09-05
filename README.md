@@ -3,7 +3,7 @@
 
 
 #### prerequisites:
-* Ubuntu 16.04  installed (automated installation for newer version of Ubuntu will be comming soon)
+* Ubuntu 16.04  installed (automated installation for newer version of Ubuntu will be coming soon)
 * Nvidia compatible GPU 
 -----------
 
@@ -79,10 +79,29 @@ chmod +x [script-name].sh
 >4. Make sure you choose the right version of CUDA and cuDNN.
 >
 > ![tf4](/images/tf4.png)
+> 
 >5. Then you will asked to choose NCCL version. Since, V-2.2 is not installed. Choose V-1.3.5 or lookup how to install V-2.2. Latest version contains performance improvement on multiple GPU jobs.
 >
 >![tf5](/images/tf5.png)
+>
 >6. After you finish *step-5* the compilation will start.  It could take around few minutes to a couple of hours depending on how fast is your CPU, RAM, and hard drive.
 >
 >![tf6](/images/tf6.png)
 >
+>7. Then our bash script will install TensorFlow for Python3.
+>
+>8. If our bash script ran successfully, we should see the version of the tensorflow installed on the screen.  
+
+
+### Follow me @ Republic of AI:
+
+[Republic of AI website](http://www.republicofai.com) - 
+[Medium](https://medium.com/@aidemocratization) - 
+[YouTube](https://www.youtube.com/channel/UCxGG_XEVa_tVCKXVChhGA1g) - 
+[Twitter](https://twitter.com/republic_ai) -
+[Facebook](https://www.facebook.com/Republic-of-AI-138145553567553/?modal=admin_todo_tour) - 
+[Instagram](https://www.instagram.com/republic_of_ai/) - 
+[LinkedIn](https://www.linkedin.com/company/republic-of-ai/)
+
+### or my personal LinkedIn:
+[LinkedIn Profile](https://www.linkedin.com/in/alireza-darbehani-49009174/)

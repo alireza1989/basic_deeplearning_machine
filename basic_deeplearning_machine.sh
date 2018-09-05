@@ -39,7 +39,7 @@ sudo apt-get -y install python3-pip
 sudo pip3 install numpy scipy matplotlib ipython jupyter pandas
 
 # Packages required to build the TensorFlow from the source
-sudo apt-get -y install openjdk-8-jdk git python-dev python3-dev python-numpy python3-numpy python-six python3-six build-essential 
+sudo apt-get -y install git python-dev python3-dev python-numpy python3-numpy python-six python3-six build-essential 
 sudo apt-get -y install python-pip python3-pip python-virtualenv swig python-wheel python3-wheel libcurl3-dev libcupti-dev
 
 # Add the Cuda file to .bashrc
